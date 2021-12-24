@@ -1,0 +1,24 @@
+legend{
+  color:#fc9700;
+}
+#contacto {
+  fieldset{
+    label{
+      margin-top: 7px;
+    }
+  }
+}
+
+.form-control:focus {
+  color: $azul-gris;
+  background-color: #fff;
+  border-color: $principal;
+  outline: 0;
+  box-shadow: 0 0 0 0.05rem $principal;
+}
+
+.form-select:focus {
+  border-color: $principal;
+  outline: 0;
+  box-shadow: 0 0 0 0.05rem $principal;
+}

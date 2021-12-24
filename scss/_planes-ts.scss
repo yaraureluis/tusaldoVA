@@ -1,0 +1,22 @@
+.logoPlanes {
+  height: 40px;
+}
+
+.margenLogo{
+  padding: 10px;
+  background-color: $gris;
+  background-image: $grad-footer;
+  width: 100%;
+  margin: 20px 0px;
+  border-radius: 15px;
+}
+
+#planesTv, #planesCel{
+  text-align: center;
+  h4{
+    font-weight: bold !important;
+  }
+  button{
+    font-weight: bold;
+  }
+}

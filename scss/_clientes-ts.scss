@@ -1,0 +1,19 @@
+.gridClientes{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-column-gap: 40px;
+  grid-row-gap: 40px;
+  margin: 5% 10%;
+  img{
+    width: $ancho;
+    border: solid 2px #fc9700;
+    border-radius: 15px;
+    &:hover{
+      transform: scale(1.1,1.1);
+      border: 2px #fc9700 solid;
+      box-shadow: 5px 5px 2px grey;
+      filter: brightness(120%);
+    }
+  }
+}

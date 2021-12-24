@@ -1,0 +1,76 @@
+// tabla del header
+#encabezado{
+  table{
+    padding: 0;
+    border: 0;
+    background-color: white;
+    td{
+      padding: 0;
+      border: 0;
+      background-color: white;
+    }
+  }
+}
+
+// logo del header
+#logoSup {
+  width: 80%;
+}
+// imagen del _header
+#banderaHead{
+  div{
+    background-image:url('../assets/imagenes/cinta_corta.jpg');
+    background-repeat:no-repeat;
+    background-size: cover;
+    margin: 0px;
+    height: 130px;
+    hgroup{
+      padding-top: 20px;
+      margin-right: 20px;
+    }
+  }
+}
+
+// estilo para el slogan seguimos conectados del encabezado
+#slogan{
+  float: right;
+  font-family: Dancing Script, sans-serif;
+  font-size: 2.5rem !important;
+  font-weight: 400 !important;
+  color: white;
+  background-color: transparent;
+  background-image: none;
+  margin: 10px;
+  border: none;
+}
+
+nav{
+  top: -1px;
+  border-top: 3px solid $secundario;
+  font-weight: bold !important;
+  background-color: $principal !important;
+  margin: 0% 0%;
+  .nav-link:hover{
+    color: $secundario !important;
+  }
+  .dropdown-menu{
+    border: none;
+  }
+  .dropdown-item.active, .dropdown-item:active {
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .dropdown-item:focus, .dropdown-item:hover {
+    background-color: transparent;
+    color: $secundario !important;
+  }
+  .logoBlanco{
+    height: 30px;
+  }
+}
+
+.activo{
+  color: $secundario !important;
+  border-bottom: 2px solid white;
+}

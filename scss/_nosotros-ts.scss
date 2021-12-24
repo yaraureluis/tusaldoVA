@@ -1,0 +1,52 @@
+
+table {
+  width: 100%;
+  border-color: white;
+  border-style: solid;
+  border-width: 1px;
+  border-spacing: 0px;
+  th {
+    border-color: white;
+    border-style: solid;
+    border-width: 1px;
+    border-spacing: 0px;
+    padding: 5px;
+    background-color: $principal;
+    color: white;
+  }
+  td {
+    border-color: white;
+    border-style: solid;
+    border-width: 1px;
+    border-spacing: 0px;
+    padding: 5px;
+    background-color: $gris;
+    text-align: center;
+  }
+}
+
+#seccionNosotros {
+  h2{
+    text-align: center;
+  }
+  p {
+    margin: 10px 45px;
+    text-align: justify;
+  }
+}
+.beneficiosLista{
+  margin: 10px 45px;
+}
+.imgComplemento{
+  display:flex;
+  justify-content: center;
+  flex-wrap:wrap;
+  margin: 25px;
+  div{
+    margin: 2px;
+    img{
+      width: $ancho;
+      border-radius: 20px;
+    }
+  }
+}

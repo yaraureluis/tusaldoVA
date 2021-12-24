@@ -1,0 +1,32 @@
+footer{
+  color: $negro;
+  font-variant: small-caps;
+  text-align: center;
+  background-color: $gris;
+  background-image: $grad-footer;
+  border-top: solid 1px $gris;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  padding-bottom: 5px;
+  padding-top: 10px;
+  ul{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-right: 25px;
+    li{
+      text-decoration: none;
+      list-style-type: none;
+      margin: 0px 10px;
+
+      a{
+        text-decoration: none;
+        color: $negro;
+        font-weight: bold;
+        img:hover{
+          transform: scale(1.1,1.1);
+        }
+      }
+    }
+  }
+}

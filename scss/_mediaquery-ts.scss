@@ -1,0 +1,84 @@
+@media (max-width: 768px) {
+  #login {
+    display: none;
+  }
+  nav {
+    margin-top: 0px !important;
+  }
+}
+@media (max-width: 1024px) {
+  body {
+    margin: 0% 0%;
+  }
+  nav {
+    margin-top: 30px;
+  }
+  #encabezado {
+    display: none;
+  }
+  #operadoras {
+    display: block;
+  }
+  #metodoPagos {
+    display: block;
+  }
+  #imgContacto {
+    display: none;
+  }
+  #fraseIndex {
+    display: none;
+  }
+  #logoSup {
+    margin: 10px 0px;
+  }
+  .gridClientes {
+    grid-template-columns: 2fr 2fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 10px;
+  }
+  .carruselPC {
+    display: none;
+  }
+  .carruselMob {
+    display: block;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  // nav {
+  //   margin-top: 0px;
+  // }
+}
+
+@media (min-width: 1024px) {
+  .logoBlanco {
+    display: none;
+  }
+  .carruselMob {
+    display: none;
+  }
+  .carruselPC {
+    display: block;
+    width: 100%;
+    img {
+      width: 100%;
+    }
+  }
+
+  // imagenes de la seccion nosotros
+  .imgComplemento {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+    div {
+      margin: 2px;
+    }
+  }
+}

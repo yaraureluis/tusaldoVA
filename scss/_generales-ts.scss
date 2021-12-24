@@ -1,0 +1,105 @@
+html {
+  font-size: $tamFuente !important;
+}
+body {
+  font-family: $fuente1 !important;
+  color: $azul-osc;
+}
+
+.custom-h2 {
+  color: white;
+  background-color: $principal;
+  padding: 10px;
+  animation-name: anim-h2;
+  animation-duration: 6s;
+  font-weight: bold !important;
+  font-size: 1.5rem !important;
+  border-radius: 10px;
+  border-bottom: 2px solid $secundario;
+  text-align: center;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 1);
+}
+
+h3 {
+  color: $principal;
+  background-color: $gris;
+  background-image: $grad-footer;
+  padding: 10px;
+  font-weight: bold !important;
+  font-size: 1.2rem !important;
+  border-radius: 10px;
+  text-align: center;
+}
+
+p {
+  font-weight: 500;
+}
+
+// fondos de colores
+.fondoOrange {
+  background-color: $principal !important;
+}
+
+.ancho20 {
+  width: 20%;
+}
+
+.fondoBronce {
+  background-color: $bronce;
+  color: white;
+}
+
+.fondoPlata {
+  background-color: $plata;
+  color: white;
+}
+
+.fondoOro {
+  background-color: $oro;
+  color: white;
+}
+
+.fondoDiamante {
+  background-color: $diamante;
+  color: white;
+}
+
+/* estilo para botones */
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  background-color: $azul-gris;
+  color: white;
+  border-radius: 10px;
+  border: 2px;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover {
+  background-color: $secundario;
+  color: white;
+  border-radius: 10px;
+  border: 1px;
+}
+
+.form-check-input:checked {
+  background-color: $principal;
+  border-color: $principal;
+}
+
+// boton flotante Whatsapp
+.float {
+  position: fixed;
+  bottom: 2%;
+  right: 2%;
+  z-index: 100;
+  &:hover {
+    transform: scale(1.3, 1.3);
+  }
+}
+
+.swal2-cancel,
+.swal2-confirm {
+  margin: 0 0.5rem !important;
+}

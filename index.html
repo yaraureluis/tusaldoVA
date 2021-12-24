@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+    <title>Web Oficial - Tu Saldo VA Recargas</title>
+    <link rel="icon" type="image/png" href="assets/imagenes/icono_32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="assets/imagenes/icono_16.png" sizes="16x16" />
+    <link rel="stylesheet" href="libreria/bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="css/estilos.css" />
+    <meta name="description" content="Recarga el saldo de empresas telefónicas y servicios de tv de Venezuela desde Argentina, pagando en pesos y al instante.Transacciones 100% seguras, rápidas y económicas, ¡seguimos conectados!" />
+    <meta name="keywords" content="RECARGAS, SALDO, VENEZUELA, ARGENTINA, DIGITEL, MOVILNET, MOVISTAR, SIMPLETV, BOLIVARES" />
+    <!-- OG data -->
+    <meta property="og:title" content="Recarga el saldo de empresas telefónicas y servicios de tv de Venezuela desde Argentina, pagando en pesos y al instante.Transacciones 100% seguras, rápidas y económicas, ¡seguimos conectados!" />
+    <meta property="og:site_name" content="Tu Saldo VA - Recargas" />
+    <meta property="og:url" content="https://yaraureluis.github.io/tusaldoVA_coderhouse/" />
+    <meta property="og:description" content="RECARGAS, SALDO, VENEZUELA, ARGENTINA, DIGITEL, MOVILNET, MOVISTAR, SIMPLETV, BOLIVARES." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://yaraureluis.github.io/tusaldoVA_coderhouse/assets/imagenes/logo_cuadrado.jpg" />
+  </head>
+  <body>
+    <!-- Boton Whatsapp -->
+    <a href="https://wa.me/5491123972723?text=Estoy%20interesado%20en%20recibir%20información%20sobre%20las%20recargas%20hacia%20Venezuela" class="float" target="_blank" rel="noopener">
+      <picture>
+        <source media="(max-width:768px)" srcset="assets/imagenes/wsBtn2.svg" />
+        <img src="assets/imagenes/wsBtn.svg" alt="Enlace hacia Whatsapp" />
+      </picture>
+    </a>
+    <!-- final boton Whatsapp -->
+    <!--desde aqui el encabezado-->
+    <header>
+      <div class="fixed-top bg-white d-flex justify-content-end py-1 pe-3">
+        <form id="login" action="login.php" method="post">
+          <label for="usuario"> Nombre de Usuario </label>
+          <input type="text" id="usuario" required />
+          <label for="clave"> Contraseña </label>
+          <input type="password" id="clave" required />
+          <input type="submit" id="ingresar" value="Ingresar" />
+        </form>
+        <p id="saludo_usuario" class="mb-0 mt-1 me-2 align-text-bottom fw-bold" hidden></p>
+        <button type="button" id="cerrar" class="btn btn-outline-warning btn-sm" hidden>Cerrar Sesión</button>
+      </div>
+      <div id="encabezado" class="mt-4">
+        <table>
+          <tr>
+            <td class="ancho20">
+              <a href="index.html">
+                <img src="assets/imagenes/logo.svg" alt="logo" id="logoSup" />
+              </a>
+            </td>
+            <td id="banderaHead">
+              <div>
+                <hgroup>
+                  <h1 hidden>Tu Saldao VA - Recargas a Venezuela</h1>
+                  <h2 id="slogan">Seguimos Conectados!</h2>
+                </hgroup>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html" aria-label="inicio">
+            <img src="assets/imagenes/logo_blanco.svg" alt="logo Tu Saldo VA" class="logoBlanco" />
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link activo" href="index.html">INICIO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="secciones/nosotros.html">NOSOTROS</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="planes.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> PLANES </a>
+                <ul class="dropdown-menu fondoOrange" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item letraBlanca" href="secciones/planes.html">Planes Telefonia</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item letraBlanca" href="secciones/planes.html#planesTv">Planes TV</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="secciones/preguntas_frecuentes.html">PREGUNTAS FRECUENTES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="secciones/clientes.html">RESEÑAS CLIENTES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="secciones/contacto.html">CONTACTO</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!--hasta aqui el encabezado-->
+
+    <main>
+      <!-- carrusel de imagenes vista PC  -->
+      <div class="carruselPC">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="assets/imagenes/prueba.jpg" alt="personas_comunicandose" />
+            </div>
+            <div class="carousel-item">
+              <img src="assets/imagenes/prueba2.jpg" alt="personas_comunicandose" />
+            </div>
+            <div class="carousel-item">
+              <img src="assets/imagenes/prueba3.jpg" alt="personas_comunicandose" />
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- carrusel de imagenes vista smartphone y tablet -->
+      <div id="carouselExampleControls" class="carousel slide carruselMob mb-2" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="assets/imagenes/pub1.jpg" alt="persona_publicidad" class="d-block w-100" />
+          </div>
+          <div class="carousel-item">
+            <img src="assets/imagenes/pub2.jpg" alt="persona_publicidad" class="d-block w-100" />
+          </div>
+          <div class="carousel-item">
+            <img src="assets/imagenes/pub3.jpg" alt="persona_publicidad" class="d-block w-100" />
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <div class="container-lg desvanecer">
+        <p id="fraseIndex" class="letrDancing my-3">Recarga el saldo de compañías telefónicas y servicios de TV de Venezuela desde Argentina, pagando en pesos!</p>
+
+        <h2 class="custom-h2">¿Qué puedes recargar?</h2>
+        <section id="operadoras">
+          <!-- empresas que puedes recargar generadas por peticion GET-->
+        </section>
+
+        <h2 class="custom-h2">¿Cómo pagar?</h2>
+        <div id="metodoPagos">
+          <!-- videos metodos de pago -->
+          <div>
+            <p>Transferencia bancaria</p>
+            <div>
+              <iframe width="100%" height="400" src="https://www.youtube.com/embed/x2Sl0kvF95w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div>
+            <p>Mercadopago</p>
+            <div>
+              <iframe width="100%" height="400" src="https://www.youtube.com/embed/o8F8nD3G4ro" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+
+        <section>
+          <h2 class="custom-h2">Recargar</h2>
+          <form action="recargar.php" method="post" class="w-75 m-auto" id="formRecarga">
+            <label for="operadora" class="mb-1">Selecciona la operadora:</label>
+            <select name="operadora" id="operadora" required class="form-select"></select>
+            <label for="telefono" class="form-label mb-1">Número a recargar:</label>
+            <input type="tel" id="telefono" placeholder="04161234567" required class="form-control" />
+            <label for="plan" class="mb-1">Selecciona un plan:</label>
+            <select name="plan" id="plan" required class="form-select"></select>
+            <div class="d-grid gap-2">
+              <input type="submit" id="recargar" value="Recargar" class="btn mt-3" />
+            </div>
+          </form>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <ul>
+        <li>
+          <a href="index.html" aria-label="inicio">
+            <img src="assets/imagenes/icono_home.svg" alt="Icono Home volver a inicio" />
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/tusaldova/" target="_blank" rel="noopener" aria-label="instagram">
+            <img src="assets/imagenes/icono_instagram.svg" alt="Icono Instagram ir a instagra" />
+          </a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/Tu-Saldo-VA-704643583703092/" target="_blank" rel="noopener" aria-label="facebook">
+            <img src="assets/imagenes/icono_facebook.svg" alt="Icono facebook ir a facebook" />
+          </a>
+        </li>
+      </ul>
+      <p>2020-2022 Tu Saldo VA Buenos Aires - Argentina. Todos los derechos reservados</p>
+    </footer>
+
+    <script src="libreria/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="text/javascript" src="js/function.js"></script>
+    <script type="text/javascript" src="js/login.js"></script>
+  </body>
+</html>

@@ -1,0 +1,57 @@
+// desplazamientos
+
+$animation-delays:0,200ms,400ms,600ms,800ms,1000ms,1200ms,1400ms,1600ms,1800ms,2000ms,3200ms,3800ms;
+@each $delay in $animation-delays{
+    .movDere-#{$delay} {
+        animation-name: movDere;
+        animation-duration: 2000ms;
+        animation-delay: $delay;
+        animation-timing-function: ease-in-out;
+        visibility: hidden;
+        animation-fill-mode: forwards;
+    }
+    .movUp-#{$delay} {
+        animation-name: movUp;
+        animation-duration: 2000ms;
+        animation-delay: $delay;
+        animation-timing-function: ease-in-out;
+        visibility: hidden;
+        animation-fill-mode: forwards;
+    }
+}
+
+@keyframes movDere {
+	from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0%);
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+@keyframes movUp {
+	from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0%);
+        opacity: 1;
+        visibility: visible;
+    }
+}
+.desvanecer{
+  animation: desvanecer 3s;
+}
+
+@keyframes desvanecer{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
