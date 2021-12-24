@@ -4,10 +4,10 @@ const porcentaje = 0.8;
 // Json con operadoras y planes
 const planes = {
   movilnet: [
-    { plan: "Bronce", color: "Bronce", precio_bs: 3, precio_pesos: tasa * porcentaje },
-    { plan: "Plata", color: "Plata", precio_bs: 6, precio_pesos: tasa * porcentaje },
-    { plan: "Oro", color: "Oro", precio_bs: 9, precio_pesos: tasa * porcentaje },
-    { plan: "Diamante", color: "Diamante", precio_bs: 12, precio_pesos: tasa * porcentaje },
+    { plan: "Bronce", color: "Bronce", precio_bs: 4, precio_pesos: tasa * porcentaje },
+    { plan: "Plata", color: "Plata", precio_bs: 8, precio_pesos: tasa * porcentaje },
+    { plan: "Oro", color: "Oro", precio_bs: 12, precio_pesos: tasa * porcentaje },
+    { plan: "Diamante", color: "Diamante", precio_bs: 16, precio_pesos: tasa * porcentaje },
   ],
   digitel: [
     { plan: "Bronce", color: "Bronce", precio_bs: 5, precio_pesos: tasa * porcentaje },
