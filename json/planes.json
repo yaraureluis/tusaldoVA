@@ -3,36 +3,36 @@
     "operadora": "Digitel",
     "logo": "assets/imagenes/digitel.svg",
     "desde_bs": 5,
-    "desde_pesos": 300
+    "desde_pesos": 290
   },
   {
     "operadora": "Movistar",
     "logo": "assets/imagenes/movistar.svg",
     "desde_bs": 4,
-    "desde_pesos": 250
+    "desde_pesos": 230
   },
   {
     "operadora": "Movilnet",
     "logo": "assets/imagenes/movilnet.svg",
-    "desde_bs": 3,
-    "desde_pesos": 200
+    "desde_bs": 4,
+    "desde_pesos": 230
   },
   {
     "operadora": "Inter",
     "logo": "assets/imagenes/inter.svg",
     "desde_bs": 5,
-    "desde_pesos": 300
+    "desde_pesos": 290
   },
   {
     "operadora": "Simple TV",
     "logo": "assets/imagenes/simple_tv.svg",
     "desde_bs": 5,
-    "desde_pesos": 300
+    "desde_pesos": 290
   },
   {
     "operadora": "Movistar TV",
     "logo": "assets/imagenes/movistar_tv.svg",
     "desde_bs": 5,
-    "desde_pesos": 300
+    "desde_pesos": 290
   }
 ]
